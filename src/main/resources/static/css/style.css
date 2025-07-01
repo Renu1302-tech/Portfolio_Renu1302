@@ -1,0 +1,453 @@
+/* Custom CSS for Renuka Sunkara Portfolio */
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #1e40af;
+    --accent-color: #06b6d4;
+    --success-color: #10b981;
+    --warning-color: #f59e0b;
+    --danger-color: #ef4444;
+    --dark-color: #1f2937;
+    --light-color: #f8fafc;
+    --purple-color: #8b5cf6;
+    --orange-color: #f97316;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #374151;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+/* Navigation */
+.navbar {
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 50%, #cffafe 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23e2e8f0" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.hero-content,
+.hero-content * {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+    transition: none !important;
+    will-change: auto !important;
+}
+
+
+/* .text-gradient {
+    background: linear-gradient(135deg, var(--accent-color), var(--primary-color), var(--dark-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    opacity: 1 !important;
+    transition: none !important;
+    animation: none !important;
+} */
+
+.text-gradient {
+    color: #2563eb; /* fallback to test speed */
+}
+
+
+
+/* @keyframes fadeInText {
+    to {
+        opacity: 1;
+    }
+} */
+
+
+.profile-container {
+    padding: 4px;
+    border-radius: 1rem;
+    background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+    display: inline-block;
+    position: relative;
+    width: fit-content;
+    height: auto;
+}   
+
+.profile-img {
+    max-width: 420px;     /* Adjust as needed */
+    height: auto;
+    position: relative;
+    z-index: 3;
+    transition: transform 0.3s ease;
+    border: 4px solid white;
+    border-radius: 1rem;  
+    display: block;
+} 
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+.profile-container::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+    border-radius: 1rem;
+    z-index: 1;
+    animation: float 3s ease-in-out infinite;
+}
+
+.profile-container::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;   
+    background: linear-gradient(135deg, var(--primary-color), var(--dark-color));
+    border-radius: 1rem;
+    z-index: 0;
+    animation: float 3s ease-in-out infinite reverse;
+}
+
+/* Animations */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px) rotate(6deg);
+    }
+    50% {
+        transform: translateY(-10px) rotate(-6deg);
+    }
+}
+
+/* Icon Boxes */
+.icon-box {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+}
+
+/* Custom Background Colors */
+.bg-purple {
+    background-color: var(--purple-color) !important;
+}
+
+.bg-orange {
+    background-color: var(--orange-color) !important;
+}
+
+.bg-gradient-primary {
+    background: linear-gradient(135deg, var(--accent-color), var(--primary-color)) !important;
+}
+
+.bg-gradient-light {
+    background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 50%, #cffafe 100%) !important;
+}
+
+/* Achievement Bullets */
+.achievement-bullet {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-top: 6px;
+    flex-shrink: 0;
+}
+
+/* Skill Progress Bars */
+.progress {
+    height: 8px;
+    border-radius: 4px;
+    background-color: #e5e7eb;
+}
+
+.progress-bar {
+    border-radius: 4px;
+    transition: width 1.5s ease-in-out;
+}
+
+/* Project Cards */
+.project-card {
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 1rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--primary-color), var(--accent-color));
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -2.25rem;
+    top: 1rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 0 3px var(--primary-color);
+    z-index: 2;
+}
+
+.timeline-content {
+    margin-left: 1rem;
+}
+
+/* Contact Form */
+.contact-item {
+    margin-bottom: 1.5rem;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.25);
+}
+
+.form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.25);
+}
+
+/* Social Links */
+.social-links a {
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-color) !important;
+    transform: translateY(-2px);
+}
+
+/* Button Animations */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        padding-top: 2rem;
+    }
+    
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .timeline {
+        padding-left: 1.5rem;
+    }
+    
+    .timeline::before {
+        left: 0.75rem;
+    }
+    
+    .timeline-dot {
+        left: -1.75rem;
+    }
+}
+
+/* Custom Badge Styles */
+.badge {
+    font-weight: 500;
+    padding: 0.5rem 0.75rem;
+}
+
+/* Card Hover Effects */
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+}
+
+/* Loading States */
+.btn-loading {
+    position: relative;
+    color: transparent !important;
+}
+
+.btn-loading::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -8px;
+    border: 2px solid transparent;
+    border-top-color: currentColor;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Section Spacing */
+section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+/* Custom Alerts */
+.alert {
+    border: none;
+    border-radius: 0.75rem;
+    padding: 1rem 1.5rem;
+}
+
+.alert-success {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+
+.alert-danger {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #1f2937 0%, #111827 100%) !important;
+}
+
+/* Utilities */
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.border-primary {
+    border-color: var(--primary-color) !important;
+}
+
+/* Focus States for Accessibility */
+.btn:focus,
+.form-control:focus,
+.form-select:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .btn,
+    #contact {
+        display: none !important;
+    }
+    
+    section {
+        padding: 1rem 0 !important;
+        page-break-inside: avoid;
+    }
+    
+    .card {
+        border: 1px solid #dee2e6 !important;
+        box-shadow: none !important;
+    }
+}

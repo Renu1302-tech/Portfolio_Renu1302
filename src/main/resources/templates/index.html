@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renuka Sunkara - Data Scientist & Machine Learning Engineer</title>
+    <meta name="description" content="Data Scientist and Machine Learning Engineer specializing in computer vision, NLP, and deep learning. MS in Computer Science from Montclair State University.">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="/css/style.css" rel="stylesheet">
+    <!--Google fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="#home">
+                <span class="badge bg-gradient-primary me-2">RS</span>
+                Renuka Sunkara
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <!-- Hero Section -->
+    <section id="home" class="d-flex align-items-center min-vh-100 bg-gradient-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Column: Content -->
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <!-- <h1 class="display-4 fw-bold mb-3">
+                            Hi, I'm <span class="text-gradient">Renuka</span>
+                        </h1> -->
+                        <h1 class="display-4 fw-bold mb-3" style="opacity: 1 !important; transform: none !important; animation: none !important;">
+                            Hi, I'm <span class="text-gradient" style="opacity: 1 !important;">Renuka</span>
+                        </h1>
+
+                        <h2 class="h3 text-muted mb-4">Data Scientist & Machine Learning Engineer</h2>
+                        <p class="lead mb-4">
+                            Passionate about transforming data into actionable insights. Specialized in computer vision, 
+                            NLP, and deep learning with hands-on experience in building scalable ML solutions.
+                        </p>
+
+                        <div class="d-flex flex-wrap gap-3 mb-4">
+                            <a href="/resume/Renuka_Sunkara_Data Scientist.pdf" class="btn btn-primary btn-lg">
+                                <i class="fas fa-download me-2"></i>Download Resume
+                            </a>
+                            <a href="#projects" class="btn btn-outline-primary btn-lg">
+                                View Projects <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/renuka-sunkara-3901141bb/" class="text-muted me-3" target="_blank">
+                                <i class="fab fa-linkedin fa-2x"></i>
+                            </a>
+                            <a href="https://github.com/Renu1302-tech" class="text-muted me-3" target="_blank">
+                                <i class="fab fa-github fa-2x"></i>
+                            </a>
+                            <a href="mailto:renukasunkara13301@gmail.com" class="text-muted">
+                                <i class="fas fa-envelope fa-2x"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Image -->
+                <div class="col-lg-6">
+                    <div class="hero-image text-center">
+                        <div class="profile-container">
+                            <img src="images/Professional Headshot.jpeg" 
+                                alt="Renuka Sunkara - Professional headshot" 
+                                class="img-fluid rounded-3 shadow-lg profile-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="display-5 fw-bold mb-4">About Me</h2>
+                    <p class="lead">
+                        Currently pursuing Master's in Computer and Information Sciences at Montclair State University, 
+                        I bring a unique blend of academic rigor and practical experience in data science and machine learning.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 bg-light">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-box bg-primary text-white me-3">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <h3 class="h5 mb-0">Education</h3>
+                            </div>
+                            <div class="text-muted">
+                                <p class="fw-semibold mb-1">Master of Science in Computer and Information Sciences</p>
+                                <p class="mb-1">Montclair State University</p>
+                                <p class="fst-italic mb-2">Expected December 2025 | GPA: 3.41</p>
+                                <div class="mt-3">
+                                    <p class="small fw-medium mb-1">Relevant Coursework:</p>
+                                    <p class="small">Machine Learning, Deep Learning, Computer Vision, Statistical Modeling, Predictive Analysis, Data Visualization, NLP</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 bg-light">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-box bg-success text-white me-3">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                                <h3 class="h5 mb-0">Experience</h3>
+                            </div>
+                            <p class="text-muted">
+                                Former Systems Engineer Trainee at Infosys with experience in ETL workflows, 
+                                data pipelines, and business intelligence solutions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto">
+                    <h3 class="h4 mb-4">Key Achievements</h3>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-start">
+                                <div class="achievement-bullet bg-info me-3"></div>
+                                <p class="mb-2">Achieved 80% accuracy in student behavior detection using YOLOv5/YOLOv8</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-start">
+                                <div class="achievement-bullet bg-warning me-3"></div>
+                                <p class="mb-2">Developed emotion detection system with 85% mood detection accuracy</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-start">
+                                <div class="achievement-bullet bg-danger me-3"></div>
+                                <p class="mb-2">Built fake news detection model achieving 99.5% accuracy</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-start">
+                                <div class="achievement-bullet bg-success me-3"></div>
+                                <p class="mb-2">Processed 1.6M tweets for sentiment analysis with 80% classification accuracy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-4">Technical Skills</h2>
+                <p class="lead">Comprehensive expertise across the data science and machine learning stack</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Programming Languages -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="icon-box bg-dark text-white me-3">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <h3 class="h5 mb-0">Languages</h3>
+                            </div>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-primary">Python</span>
+                                <span class="badge bg-info">R</span>
+                                <span class="badge bg-success">SQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ML & AI -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="icon-box bg-info text-white me-3">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <h3 class="h5 mb-0">ML & AI</h3>
+                            </div>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-secondary">TensorFlow</span>
+                                <span class="badge bg-secondary">PyTorch</span>
+                                <span class="badge bg-secondary">Scikit-learn</span>
+                                <span class="badge bg-secondary">YOLO</span>
+                                <span class="badge bg-secondary">NLTK</span>
+                                <span class="badge bg-secondary">OpenCV</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Data Processing -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="icon-box bg-success text-white me-3">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <h3 class="h5 mb-0">Data Processing</h3>
+                            </div>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-secondary">Pandas</span>
+                                <span class="badge bg-secondary">NumPy</span>
+                                <span class="badge bg-secondary">Data Cleaning</span>
+                                <span class="badge bg-secondary">EDA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Visualization -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="icon-box bg-warning text-white me-3">
+                                    <i class="fas fa-chart-bar"></i>
+                                </div>
+                                <h3 class="h5 mb-0">Visualization</h3>
+                            </div>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-secondary">Tableau</span>
+                                <span class="badge bg-secondary">Power BI</span>
+                                <span class="badge bg-secondary">Matplotlib</span>
+                                <span class="badge bg-secondary">ggplot</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tools -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="icon-box bg-purple text-white me-3">
+                                    <i class="fas fa-tools"></i>
+                                </div>
+                                <h3 class="h5 mb-0">Tools</h3>
+                            </div>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-secondary">Git</span>
+                                <span class="badge bg-secondary">Databricks</span>
+                                <span class="badge bg-secondary">Comet-ML</span>
+                                <span class="badge bg-secondary">Roboflow</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-4">Featured Projects</h2>
+                <p class="lead">Explore my portfolio of data science and machine learning projects</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Student Behavior Detection -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm project-card">
+                        <img src="images/Student teacher.jpg" 
+                             class="card-img-top" alt="Student Behavior Detection">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <h5 class="card-title">Student Behavior Detection</h5>
+                                <span class="badge bg-primary">Ongoing</span>
+                            </div>
+                            <p class="card-text">Advanced computer vision system using YOLOv5/YOLOv8 for real-time student engagement analysis achieving 80% accuracy.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="badge bg-light text-dark">YOLO</span>
+                                <span class="badge bg-light text-dark">Computer Vision</span>
+                                <span class="badge bg-light text-dark">Deep Learning</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">
+                                    <i class="fas fa-eye me-1"></i>80% Accuracy
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Emotion Detection Music Player -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm project-card">
+                        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" 
+                             class="card-img-top" alt="Emotion Detection Music Player">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <h5 class="card-title">Emotion Detection Music Player</h5>
+                                <span class="badge bg-success">Completed</span>
+                            </div>
+                            <p class="card-text">Smart music recommendation system using facial emotion detection with OpenCV, achieving 85% mood detection accuracy.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="badge bg-light text-dark">OpenCV</span>
+                                <span class="badge bg-light text-dark">ML</span>
+                                <span class="badge bg-light text-dark">Python</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">
+                                    <i class="fas fa-heart me-1"></i>85% Accuracy
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Fake News Detection -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm project-card">
+                        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" 
+                             class="card-img-top" alt="Fake News Detection">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <h5 class="card-title">Fake News Detection</h5>
+                                <span class="badge bg-success">Completed</span>
+                            </div>
+                            <p class="card-text">Machine learning classifier using Sentiment140 dataset with TF-IDF vectorization, achieving 99.5% accuracy with Decision Tree.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="badge bg-light text-dark">NLP</span>
+                                <span class="badge bg-light text-dark">TF-IDF</span>
+                                <span class="badge bg-light text-dark">Scikit-learn</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">
+                                    <i class="fas fa-bullseye me-1"></i>99.5% Accuracy
+                                </small>
+                                <div>
+                                    <a href="https://github.com/Renu1302-tech/Fake-News-Detection" class="btn btn-sm btn-outline-primary me-2">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Twitter Sentiment Analysis -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm project-card">
+                        <img src="https://images.unsplash.com/photo-1611605698335-8b1569810432?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" 
+                             class="card-img-top" alt="Twitter Sentiment Analysis">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <h5 class="card-title">Twitter Sentiment Analysis</h5>
+                                <span class="badge bg-success">Completed</span>
+                            </div>
+                            <p class="card-text">Big data processing of 1.6M tweets using Databricks with real-time sentiment classification achieving 80% accuracy.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="badge bg-light text-dark">Big Data</span>
+                                <span class="badge bg-light text-dark">Databricks</span>
+                                <span class="badge bg-light text-dark">NLP</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">
+                                    <i class="fas fa-chart-line me-1"></i>1.6M Tweets
+                                </small>
+                                <div>
+                                    <a href="https://github.com/Renu1302-tech/Twitter_Sentimental_Analysis" class="btn btn-sm btn-outline-primary me-2">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ETL Data Pipeline -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm project-card">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" 
+                             class="card-img-top" alt="ETL Data Pipeline">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <h5 class="card-title">ETL Data Pipeline</h5>
+                                <span class="badge bg-success">Completed</span>
+                            </div>
+                            <p class="card-text">Enterprise-level ETL workflows and data pipelines with interactive Power BI dashboards for real-time business intelligence.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="badge bg-light text-dark">ETL</span>
+                                <span class="badge bg-light text-dark">Power BI</span>
+                                <span class="badge bg-light text-dark">SAP ABAP</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">
+                                    <i class="fas fa-tachometer-alt me-1"></i>20% Performance
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Research Publication -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm project-card">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" 
+                             class="card-img-top" alt="Research Publication">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <h5 class="card-title">Research Publication</h5>
+                                <span class="badge bg-warning">Submission</span>
+                            </div>
+                            <p class="card-text">Benchmark research for student classroom behavior detection planned for submission to peer-reviewed conference in Fall 2025.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="badge bg-light text-dark">Research</span>
+                                <span class="badge bg-light text-dark">Academic</span>
+                                <span class="badge bg-light text-dark">Publication</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">
+                                    <i class="fas fa-calendar me-1"></i>Fall 2025
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-4">Professional Experience</h2>
+                <p class="lead">My journey through education and professional development in data science and technology</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <!-- Timeline -->
+                <div class="position-relative">
+                    <!-- Timeline Line -->
+                    <div class="position-absolute start-50 translate-middle-x" style="width: 2px; height: 100%; background: linear-gradient(to bottom, var(--primary-color), var(--accent-color));"></div>
+
+                    <!-- Master's Student - Current -->
+                    <div class="position-relative d-flex align-items-center mb-5">
+                        <div class="w-50 pe-4 text-end">
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body p-4">
+                                    <div class="d-flex align-items-center justify-content-end mb-2">
+                                        <span class="badge bg-primary me-2">Current</span>
+                                        <h5 class="card-title mb-0">Master's Student</h5>
+                                    </div>
+                                    <h6 class="text-primary mb-2">Montclair State University</h6>
+                                    <p class="text-muted small mb-3">Jan 2024 - Dec 2025 | GPA: 3.41</p>
+                                    <p class="card-text mb-3 text-end">
+                                        Pursuing Master of Science in Computer and Information Sciences with focus on 
+                                        Machine Learning, Deep Learning, Statistical Modeling and Predictive Analysis
+                                    </p>
+                                    <div class="d-flex flex-wrap justify-content-end gap-2">
+                                        <span class="badge bg-light text-dark">Machine Learning</span>
+                                        <span class="badge bg-light text-dark">Deep Learning</span>
+                                        <span class="badge bg-light text-dark">NLP</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="position-absolute start-50 translate-middle" style="width: 16px; height: 16px; background-color: #2563eb; border: 4px solid white; border-radius: 50%; box-shadow: 0 0 0 3px #2563eb;"></div>
+                        <div class="w-50 ps-4"></div>
+                    </div>
+
+                    <!-- Systems Engineer Trainee - Completed -->
+                    <div class="position-relative d-flex align-items-center mb-5">
+                        <div class="w-50 pe-4"></div>
+                        <div class="position-absolute start-50 translate-middle" style="width: 16px; height: 16px; background-color: #10b981; border: 4px solid white; border-radius: 50%; box-shadow: 0 0 0 3px #10b981;"></div>
+                        <div class="w-50 ps-4">
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body p-4">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <h5 class="card-title mb-0">Systems Engineer Trainee</h5>
+                                        <span class="badge bg-success ms-2">Completed</span>
+                                    </div>
+                                    <h6 class="text-primary mb-2">Infosys</h6>
+                                    <p class="text-muted small mb-3">Aug 2022 - Jan 2023</p>
+                                    <p class="card-text mb-3">
+                                        Developed ETL workflows, data pipelines, and interactive Power BI dashboards. 
+                                        Built custom SAP ABAP solutions improving system performance by 20%.
+                                    </p>
+                                    
+                                    <div class="achievements mb-3">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <i class="fas fa-check-circle text-success me-2"></i>
+                                            <span class="small">Enhanced data processing efficiency through ETL workflows</span>
+                                        </div>
+                                        <div class="d-flex align-items-center mb-2">
+                                            <i class="fas fa-check-circle text-success me-2"></i>
+                                            <span class="small">Designed real-time Power BI dashboards for business intelligence</span>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-check-circle text-success me-2"></i>
+                                            <span class="small">Optimized SAP ABAP solutions for 20% performance improvement</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <span class="badge bg-light text-dark">ETL</span>
+                                        <span class="badge bg-light text-dark">Power BI</span>
+                                        <span class="badge bg-light text-dark">SAP ABAP</span>
+                                        <span class="badge bg-light text-dark">Data Pipelines</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Professional Certifications -->
+                    <div class="position-relative d-flex align-items-center">
+                        <div class="w-50 pe-4 text-end">
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title mb-4">Professional Certifications</h5>
+                                    <div class="certifications">
+                                        <div class="border-start border-4 border-info ps-3 mb-3">
+                                            <p class="fw-medium text-primary mb-1">Accenture</p>
+                                            <p class="small text-muted mb-0">Data Analysis and Visualization</p>
+                                        </div>
+                                        <div class="border-start border-4 border-primary ps-3">
+                                            <p class="fw-medium text-primary mb-1">Imarticus Learning</p>
+                                            <p class="small text-muted mb-0">Data Science Prodegree (KPMG Certified)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="position-absolute start-50 translate-middle" style="width: 16px; height: 16px; background-color: #06b6d4; border: 4px solid white; border-radius: 50%; box-shadow: 0 0 0 3px #06b6d4;"></div>
+                        <div class="w-50 ps-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-4">Get In Touch</h2>
+                <p class="lead">
+                    I'm always interested in discussing new opportunities, collaborations, 
+                    or innovative data science projects. Let's connect!
+                </p>
+            </div>
+            
+            <!-- Success/Error Messages -->
+            <div th:if="${successMessage}" class="alert alert-success alert-dismissible fade show" role="alert">
+                <i class="fas fa-check-circle me-2"></i>
+                <span th:text="${successMessage}"></span>
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+            
+            <div th:if="${errorMessage}" class="alert alert-danger alert-dismissible fade show" role="alert">
+                <i class="fas fa-exclamation-circle me-2"></i>
+                <span th:text="${errorMessage}"></span>
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+            
+            <div class="row g-5">
+                <!-- Contact Information -->
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <h3 class="h4 mb-4">Contact Information</h3>
+                        
+                        <div class="contact-item d-flex align-items-center mb-4">
+                            <div class="icon-box bg-primary text-white me-3">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="fw-medium mb-1">Email</p>
+                                <p class="text-muted mb-0">renukasunkara13301@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item d-flex align-items-center mb-4">
+                            <div class="icon-box bg-info text-white me-3">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <p class="fw-medium mb-1">Phone</p>
+                                <p class="text-muted mb-0">+1 (201) 204-7740</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item d-flex align-items-center mb-4">
+                            <div class="icon-box bg-success text-white me-3">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <p class="fw-medium mb-1">Location</p>
+                                <p class="text-muted mb-0">Jersey City, NJ</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links-contact mt-4">
+                            <h4 class="h5 mb-3">Professional Links</h4>
+                            <div class="d-flex gap-3">
+                                <a href="https://www.linkedin.com/in/renuka-sunkara-3901141bb/" 
+                                   class="btn btn-outline-primary btn-sm" target="_blank">
+                                    <i class="fab fa-linkedin me-2"></i>LinkedIn
+                                </a>
+                                <a href="https://github.com/renuka-sunkara" 
+                                   class="btn btn-outline-dark btn-sm" target="_blank">
+                                    <i class="fab fa-github me-2"></i>GitHub
+                                </a>
+                                <a href="/resume/Renuka_Sunkara_Data Scientist.pdf" 
+                                   class="btn btn-outline-secondary btn-sm" target="_blank">
+                                    <i class="fas fa-file-pdf me-2"></i>Resume
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="areas-interest mt-4">
+                            <div class="card bg-light border-0">
+                                <div class="card-body p-4">
+                                    <h4 class="h6 mb-3">Areas of Interest</h4>
+                                    <ul class="list-unstyled small text-muted mb-0">
+                                        <li class="mb-2">
+                                            <i class="fas fa-chevron-right text-primary me-2"></i>
+                                            Machine Learning & AI Research
+                                        </li>
+                                        <li class="mb-2">
+                                            <i class="fas fa-chevron-right text-primary me-2"></i>
+                                            Computer Vision Applications
+                                        </li>
+                                        <li class="mb-2">
+                                            <i class="fas fa-chevron-right text-primary me-2"></i>
+                                            Natural Language Processing
+                                        </li>
+                                        <li class="mb-2">
+                                            <i class="fas fa-chevron-right text-primary me-2"></i>
+                                            Data Science Consulting
+                                        </li>
+                                        <li class="mb-0">
+                                            <i class="fas fa-chevron-right text-primary me-2"></i>
+                                            Academic Collaborations
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="col-lg-6">
+                    <div class="contact-form">
+                        <form th:action="@{/contact}" th:object="${contact}" method="post">
+                            <div class="mb-3">
+                                <label for="name" class="form-label fw-medium">Full Name</label>
+                                <input type="text" th:field="*{name}" class="form-control" id="name" 
+                                       placeholder="Your full name" required>
+                                <div th:if="${#fields.hasErrors('name')}" class="text-danger small mt-1">
+                                    <span th:errors="*{name}"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-medium">Email Address</label>
+                                <input type="email" th:field="*{email}" class="form-control" id="email" 
+                                       placeholder="your.email@example.com" required>
+                                <div th:if="${#fields.hasErrors('email')}" class="text-danger small mt-1">
+                                    <span th:errors="*{email}"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="subject" class="form-label fw-medium">Subject</label>
+                                <select th:field="*{subject}" class="form-select" id="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="Job Opportunity">Job Opportunity</option>
+                                    <option value="Collaboration">Collaboration</option>
+                                    <option value="Consultation">Consultation</option>
+                                    <option value="Research">Research</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <div th:if="${#fields.hasErrors('subject')}" class="text-danger small mt-1">
+                                    <span th:errors="*{subject}"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="message" class="form-label fw-medium">Message</label>
+                                <textarea th:field="*{message}" class="form-control" id="message" rows="5" 
+                                          placeholder="Tell me about your project or opportunity..." required></textarea>
+                                <div th:if="${#fields.hasErrors('message')}" class="text-danger small mt-1">
+                                    <span th:errors="*{message}"></span>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-lg w-100">
+                                <i class="fas fa-paper-plane me-2"></i>Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-auto">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Left Column -->
+            <div class="col-md-6 mb-3 mb-md-0">
+                <div class="d-flex align-items-center">
+                    <span class="badge bg-gradient-primary me-2">RS</span>
+                    <span class="fw-semibold">Renuka Sunkara</span>
+                </div>
+                <p class="text-white small mb-0">Data Scientist & Machine Learning Engineer</p>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-md-6 text-md-end">
+                <div class="social-links mb-2">
+                    <a href="https://www.linkedin.com/in/renuka-sunkara-3901141bb/" class="text-white me-3" target="_blank">
+                        <i class="fab fa-linkedin fa-lg"></i>
+                    </a>
+                    <a href="https://github.com/Renu1302-tech" class="text-white me-3" target="_blank">
+                        <i class="fab fa-github fa-lg"></i>
+                    </a>
+                    <a href="mailto:renukasunkara13301@gmail.com" class="text-white">
+                        <i class="fas fa-envelope fa-lg"></i>
+                    </a>
+                </div>
+                <p class="text-white small mb-0">
+                    © 2024 Renuka Sunkara. Built with Spring Boot and modern web technologies.
+                </p>
+            </div>
+        </div>
+    </div>
+        </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="/js/script.js"></script>
+</body>
+</html>
